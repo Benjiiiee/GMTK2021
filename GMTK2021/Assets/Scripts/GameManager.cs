@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public List<ClimbersInput> climbers;
+    public EndPoint endPoint;
+
 
     public int climbersTotal;
     public int climbersHolding = 0;
@@ -18,11 +21,16 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         CheckClimbersNumber();
+        
     }
 
     public void CheckClimbersNumber()
     {
-        if(climbersLocked)
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        }
+        if (climbersLocked)
         {
             if(climbersHolding == climbersTotal)
             {
@@ -32,7 +40,8 @@ public class GameManager : MonoBehaviour
 
         if (climbersHolding < (climbersTotal / 2))
         {
-            Debug.Log("YOU DIED");
+            //Debug.Log("YOU DIED");
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

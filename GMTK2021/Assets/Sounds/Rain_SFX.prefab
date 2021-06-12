@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 563670043356123864}
   - component: {fileID: 563670043356123871}
   m_Layer: 0
-  m_Name: Rain_Light_2
+  m_Name: Rain_SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.072
   m_Pitch: -2.07
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -13,7 +13,6 @@ public class Trigger : MonoBehaviour
     public ParticleSystem.MainModule mainParticule;
     public bool activateCollider;
 
-    public bool timerIsRunningA;
     public float cooldownTimer;
     public float cooldownTimer2;
     public float cooldown;

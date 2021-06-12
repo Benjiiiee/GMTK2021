@@ -11,7 +11,7 @@ public class ClimbersInput : MonoBehaviour
     public Rigidbody2D myRB;
 
     // phil sprite
-    public Sprite climbing;
+    public Sprite climbingSprite;
     public Sprite swingLeft;
     public Sprite swingRight;
 
@@ -65,7 +65,7 @@ public class ClimbersInput : MonoBehaviour
         }
 
         //phil
-        velocity2D = myRB.velocity.x;
+        //velocity2D = myRB.velocity.x;
     }
 
     // Update is called once per frame
@@ -78,14 +78,19 @@ public class ClimbersInput : MonoBehaviour
         else if (Input.GetKeyUp(climbersKey))
         {
             LetGo();
-            //phil sprite switch
-            velocity2D = myRB.velocity.x;
-            if (velocity2D > 0) 
-            {/*sprite to the right*/ }
-            else if (velocity2D < 0)
-            { /*sprite to the left*/}
+
         }
 
+        //phil sprite switch
+        velocity2D = myRB.velocity.x;
+        if (velocity2D > 0)
+        {
+            climberVisual.sprite = swingRight; //phil
+        }
+        else if (velocity2D < 0)
+        {
+            climberVisual.sprite = swingLeft; //phil
+        }
     }
 
     private void FixedUpdate()
@@ -102,9 +107,13 @@ public class ClimbersInput : MonoBehaviour
         /*if (canGrip)
         {*/
         Debug.Log("IM AM GRIPPING");
+
+        climberVisual.sprite = climbingSprite; //phil
+
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         gameManager.climbersHolding++;
         textMeshPro.color = Color.green;
+        
         // }     
     }
     public void LetGo()
@@ -115,6 +124,7 @@ public class ClimbersInput : MonoBehaviour
         if (!gameManager.climbersLocked)
         {
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+
         }
         gameManager.climbersHolding--;
         textMeshPro.color = Color.red;

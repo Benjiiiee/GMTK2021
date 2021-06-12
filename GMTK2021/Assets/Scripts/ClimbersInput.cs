@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ClimbersInput : MonoBehaviour
 {
-    public MonoBehaviour gameManager;
+    public GameManager gameManager;
     public TextMeshPro textMeshPro;
     //private bool canGrip = true;
     public enum ClimbersKey
@@ -21,7 +21,9 @@ public class ClimbersInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameManager.climbersTotal++;
         textMeshPro = GetComponent<TextMeshPro>();
+        gameManager = gameManager.GetComponent<GameManager>();
 
         switch (assosiatedKey)
         {
@@ -61,8 +63,9 @@ public class ClimbersInput : MonoBehaviour
     {
         /*if (canGrip)
         {*/
-            Debug.Log("IM AM GRIPPING");
-            gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        Debug.Log("IM AM GRIPPING");
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        gameManager.climbersHolding++;
        // }     
     }
     public void LetGo()
@@ -71,6 +74,7 @@ public class ClimbersInput : MonoBehaviour
         {*/
             Debug.Log("IM AM NOT GRIPPING");
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        gameManager.climbersHolding--;
         //}
     }
 }

@@ -6,10 +6,24 @@ public class GameManager : MonoBehaviour
 {
     public List<GameObject> climbers;
 
-    public ClimbersInput.ClimbersKey a;
+    public int climbersTotal;
+    public int climbersHolding;
 
     private void Start()
     {
-        a = climbers[0].GetComponent<ClimbersInput>().assosiatedKey;
+        
+    }
+
+    private void Update()
+    {
+        CheckClimbersNumber();
+    }
+
+    public void CheckClimbersNumber()
+    {
+        if (climbersHolding < (climbersTotal / 2))
+        {
+            Debug.Log("YOU DIED");
+        }
     }
 }

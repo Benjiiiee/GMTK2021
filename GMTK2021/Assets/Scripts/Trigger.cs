@@ -9,20 +9,38 @@ public class Trigger : MonoBehaviour
 
     public Vector2 triggerDirection;
 
+    public ParticleSystem triggerParticleSystem;
+    public ParticleSystem.MainModule mainParticule;
+    public bool activateCollider;
+
+    private void Start()
+    {
+        triggerParticleSystem = GetComponentInChildren<ParticleSystem>();
+        mainParticule = triggerParticleSystem.main;
+        activateCollider = triggerParticleSystem.isPlaying;
+
+    }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        rbToMove = collision.gameObject.GetComponent<ClimbersInput>();
-        rbToMove.forcedToMove = true;
-        rbToMove.thrust = triggerThrust;
-        rbToMove.direction = triggerDirection;
+        if (activateCollider) { 
+            rbToMove = collision.gameObject.GetComponent<ClimbersInput>();
+            rbToMove.forcedToMove = true;
+            rbToMove.thrust = triggerThrust;
+            rbToMove.direction = triggerDirection;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
-    {        
-        rbToMove.forcedToMove = false;
-        rbToMove.thrust = 0f;
-        rbToMove.direction = triggerDirection;
-        rbToMove = null;
+    {
+        if (collision != null)
+        {
+            rbToMove.forcedToMove = false;
+            rbToMove.thrust = 0f;
+            rbToMove.direction = triggerDirection;
+            rbToMove = null;
+        }
+        
     }
 }

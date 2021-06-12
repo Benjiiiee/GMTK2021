@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClimbersInput : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class ClimbersInput : MonoBehaviour
         textMeshPro = GetComponent<TextMeshPro>();
         gameManager = gameManager.GetComponent<GameManager>();
         myRB = GetComponent<Rigidbody2D>();
-
+        textMeshPro.color = Color.red;
 
         switch (assosiatedKey)
         {
@@ -60,7 +61,7 @@ public class ClimbersInput : MonoBehaviour
         {
             Grip();
         }
-        else if(Input.GetKeyUp(climbersKey))
+        else if (Input.GetKeyUp(climbersKey))
         {
             LetGo();
         }
@@ -72,25 +73,30 @@ public class ClimbersInput : MonoBehaviour
         {
             myRB.AddForce(direction * thrust, ForceMode2D.Impulse);
         }
-        
+
     }
 
     public void Grip()
     {
         /*if (canGrip)
         {*/
-            Debug.Log("IM AM GRIPPING");
-            gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            gameManager.climbersHolding++;
-       // }     
+        Debug.Log("IM AM GRIPPING");
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        gameManager.climbersHolding++;
+        textMeshPro.color = Color.green;
+        // }     
     }
     public void LetGo()
     {
-       /* if (!canGrip)
-        {*/
-            Debug.Log("IM AM NOT GRIPPING");
+        /* if (!canGrip)
+         {*/
+        Debug.Log("IM AM NOT GRIPPING");
+        if (!gameManager.climbersLocked)
+        {
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            gameManager.climbersHolding--;
+        }
+        gameManager.climbersHolding--;
+        textMeshPro.color = Color.red;
         //}
     }
 }

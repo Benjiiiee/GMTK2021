@@ -18,9 +18,13 @@ public class Trigger : MonoBehaviour
         triggerParticleSystem = GetComponentInChildren<ParticleSystem>();
         mainParticule = triggerParticleSystem.main;
         activateCollider = triggerParticleSystem.isPlaying;
-
     }
-    
+
+    private void Update()
+    {
+        activateCollider = triggerParticleSystem.isPlaying;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -34,7 +38,7 @@ public class Trigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision != null)
+        if (rbToMove != null)
         {
             rbToMove.forcedToMove = false;
             rbToMove.thrust = 0f;

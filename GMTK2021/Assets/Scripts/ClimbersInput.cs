@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ClimbersInput : MonoBehaviour
 {
     public MonoBehaviour gameManager;
+    public TextMeshPro textMeshPro;
     //private bool canGrip = true;
     public enum ClimbersKey
     {
@@ -19,19 +21,25 @@ public class ClimbersInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        textMeshPro = GetComponent<TextMeshPro>();
+
         switch (assosiatedKey)
         {
             case ClimbersKey.a:
                 climbersKey = KeyCode.A;
+                textMeshPro.text = "A";
                 break;
             case ClimbersKey.s:
                 climbersKey = KeyCode.S;
+                textMeshPro.text = "S";
                 break;
             case ClimbersKey.d:
                 climbersKey = KeyCode.D;
+                textMeshPro.text = "D";
                 break;
             case ClimbersKey.f:
                 climbersKey = KeyCode.F;
+                textMeshPro.text = "F";
                 break;
         }
     }

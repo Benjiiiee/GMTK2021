@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: assosiatedKey
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1688552207827783971, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
@@ -208,6 +208,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Climber (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fda498b66056617468908e66b06c3f51, type: 3}
@@ -305,6 +320,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Climber (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.52
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fda498b66056617468908e66b06c3f51, type: 3}
 --- !u!1001 &1118788304
@@ -317,7 +347,7 @@ PrefabInstance:
     - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: assosiatedKey
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1688552207827783971, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
@@ -383,6 +413,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Climber (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fda498b66056617468908e66b06c3f51, type: 3}
@@ -581,6 +626,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Climber
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fda498b66056617468908e66b06c3f51, type: 3}

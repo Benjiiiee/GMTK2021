@@ -8,18 +8,18 @@ public class CameraScript : MonoBehaviour
     public List<Transform> targets;
     public Vector3 offset;
     public Vector3 velocity;
-    public float smoothTime = 0.5f;
+    public float smoothTime = 0.3f;
 
     public void Start()
     {
         offset = new Vector3(0, 0, -10);
-        /*for (int i = 0; i < gameManager.climbers.Count; i++)
+        for (int i = 0; i < gameManager.climbers.Count; i++)
         {
             Debug.Log(targets[i]);
             Debug.Log(gameManager.climbers[i].GetComponent<Transform>());
 
             targets[i] = gameManager.climbers[i].GetComponent<Transform>();
-        }*/
+        }
     }
     // Update is called once per frame
     void LateUpdate()

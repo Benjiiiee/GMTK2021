@@ -10,10 +10,19 @@ public class ClimbersInput : MonoBehaviour
     public TextMeshPro textMeshPro;
     public Rigidbody2D myRB;
 
+    // phil sprite
+    public Sprite climbing;
+    public Sprite swingLeft;
+    public Sprite swingRight;
+
+    public SpriteRenderer climberVisual;
+
     public bool forcedToMove;
     public float thrust;
     public Vector2 direction;
     //private bool canGrip = true;
+
+    float velocity2D;
     public enum ClimbersKey
     {
         a,
@@ -27,6 +36,8 @@ public class ClimbersInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
         gameManager.climbersTotal++;
         textMeshPro = GetComponent<TextMeshPro>();
         gameManager = gameManager.GetComponent<GameManager>();
@@ -52,6 +63,9 @@ public class ClimbersInput : MonoBehaviour
                 textMeshPro.text = "F";
                 break;
         }
+
+        //phil
+        velocity2D = myRB.velocity.x;
     }
 
     // Update is called once per frame
@@ -64,7 +78,14 @@ public class ClimbersInput : MonoBehaviour
         else if (Input.GetKeyUp(climbersKey))
         {
             LetGo();
+            //phil sprite switch
+            velocity2D = myRB.velocity.x;
+            if (velocity2D > 0) 
+            {/*sprite to the right*/ }
+            else if (velocity2D < 0)
+            { /*sprite to the left*/}
         }
+
     }
 
     private void FixedUpdate()

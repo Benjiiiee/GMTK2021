@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 1688552207827783972}
   - component: {fileID: 1688552207827783971}
   - component: {fileID: 642614155132909820}
+  - component: {fileID: -1341552146692792058}
   m_Layer: 0
   m_Name: Climber
   m_TagString: Untagged
@@ -306,3 +307,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &-1341552146692792058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688552207827783974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3e35c33849b71409b816d37003a8ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  assosiatedKey: 0
+  climbersKey: 0

@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<GameObject> climbers;
 
-    // Update is called once per frame
-    void Update()
+    public ClimbersInput.ClimbersKey a;
+
+    private void Start()
     {
-        
+        a = climbers[0].GetComponent<ClimbersInput>().assosiatedKey;
     }
 }

@@ -28,7 +28,9 @@ public class ClimbersInput : MonoBehaviour
         a,
         s,
         d,
-        f
+        f, 
+        k, 
+        l
     }
     public ClimbersKey assosiatedKey;
 
@@ -127,6 +129,14 @@ public class ClimbersInput : MonoBehaviour
                 climbersKey = KeyCode.F;
                 textMeshPro.text = "";
                 break;
+            case ClimbersKey.k:
+                climbersKey = KeyCode.K;
+                textMeshPro.text = "";
+                break;
+            case ClimbersKey.l:
+                climbersKey = KeyCode.L;
+                textMeshPro.text = "";
+                break;
         }
     }
 
@@ -149,6 +159,14 @@ public class ClimbersInput : MonoBehaviour
             case ClimbersKey.f:
                 climbersKey = KeyCode.F;
                 textMeshPro.text = "F";
+                break;
+            case ClimbersKey.k:
+                climbersKey = KeyCode.K;
+                textMeshPro.text = "K";
+                break;
+            case ClimbersKey.l:
+                climbersKey = KeyCode.L;
+                textMeshPro.text = "L";
                 break;
         }
     }

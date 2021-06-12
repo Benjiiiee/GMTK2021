@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9192033559342452924}
   - component: {fileID: 9192033559342452927}
   - component: {fileID: 9192033559342452925}
+  - component: {fileID: 2616789603506943605}
   m_Layer: 0
   m_Name: Plant_Obstacle
   m_TagString: Untagged
@@ -97,4 +98,16 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.9
+  m_Radius: 0.8
+--- !u!114 &2616789603506943605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9192033559342452926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34e7e9e5e7fb62449083875e5016da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

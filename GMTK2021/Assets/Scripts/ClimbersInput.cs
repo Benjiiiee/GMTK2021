@@ -7,6 +7,11 @@ public class ClimbersInput : MonoBehaviour
 {
     public GameManager gameManager;
     public TextMeshPro textMeshPro;
+    public Rigidbody2D myRB;
+
+    public bool forcedToMove;
+    public float thrust;
+    public Vector2 direction;
     //private bool canGrip = true;
     public enum ClimbersKey
     {
@@ -24,6 +29,8 @@ public class ClimbersInput : MonoBehaviour
         gameManager.climbersTotal++;
         textMeshPro = GetComponent<TextMeshPro>();
         gameManager = gameManager.GetComponent<GameManager>();
+        myRB = GetComponent<Rigidbody2D>();
+
 
         switch (assosiatedKey)
         {
@@ -59,13 +66,22 @@ public class ClimbersInput : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (forcedToMove)
+        {
+            myRB.AddForce(direction * thrust, ForceMode2D.Impulse);
+        }
+        
+    }
+
     public void Grip()
     {
         /*if (canGrip)
         {*/
-        Debug.Log("IM AM GRIPPING");
-        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-        gameManager.climbersHolding++;
+            Debug.Log("IM AM GRIPPING");
+            gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            gameManager.climbersHolding++;
        // }     
     }
     public void LetGo()
@@ -74,7 +90,7 @@ public class ClimbersInput : MonoBehaviour
         {*/
             Debug.Log("IM AM NOT GRIPPING");
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-        gameManager.climbersHolding--;
+            gameManager.climbersHolding--;
         //}
     }
 }

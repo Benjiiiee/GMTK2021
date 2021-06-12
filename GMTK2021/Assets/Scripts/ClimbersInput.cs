@@ -36,9 +36,6 @@ public class ClimbersInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-
-        gameManager.climbersTotal++;
         textMeshPro = GetComponent<TextMeshPro>();
         gameManager = gameManager.GetComponent<GameManager>();
         myRB = GetComponent<Rigidbody2D>();

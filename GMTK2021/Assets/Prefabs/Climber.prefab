@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1688552206282514182}
   - component: {fileID: 1688552206282514181}
   - component: {fileID: 3539653349844202922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 1688552206517644589}
   - component: {fileID: 1688552206517644590}
   - component: {fileID: 1688552206517644588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +332,8 @@ GameObject:
   - component: {fileID: 4596395014064545826}
   - component: {fileID: 2596919424892282043}
   - component: {fileID: 4996858508717158511}
-  m_Layer: 0
+  - component: {fileID: 1844707496}
+  m_Layer: 8
   m_Name: Climber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +381,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1688552207827783971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,7 +397,7 @@ MonoBehaviour:
   hook: {fileID: 1688552206517644588}
   linkPrefab: {fileID: 5024766974563073909, guid: 879055fece260ac458739456425c70f0,
     type: 3}
-  nbLinks: 7
+  nbLinks: 0
   linkedClimber: {fileID: 0}
 --- !u!233 &642614155132909820
 HingeJoint2D:
@@ -435,7 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  textMeshPro: {fileID: 0}
+  textMeshPro: {fileID: 4996858508717158511}
   myRB: {fileID: 0}
   climbingSprite: {fileID: 21300000, guid: ad8849e58fcb7cb40a364e310802dd78, type: 3}
   swingLeft: {fileID: 21300000, guid: c00bf66437289b84aa04a7894ab73354, type: 3}
@@ -444,7 +445,7 @@ MonoBehaviour:
   forcedToMove: 0
   thrust: 0
   direction: {x: 0, y: 0}
-  assosiatedKey: 0
+  assosiatedKey: 2
   climbersKey: 0
 --- !u!23 &4596395014064545826
 MeshRenderer:
@@ -584,3 +585,19 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!70 &1844707496
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688552207827783974}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0

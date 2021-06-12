@@ -15,10 +15,7 @@ public class CameraScript : MonoBehaviour
         offset = new Vector3(0, 0, -10);
         for (int i = 0; i < gameManager.climbers.Count; i++)
         {
-            Debug.Log(targets[i]);
-            Debug.Log(gameManager.climbers[i].GetComponent<Transform>());
-
-            targets[i] = gameManager.climbers[i].GetComponent<Transform>();
+            targets.Add(gameManager.climbers[i].GetComponent<Transform>());
         }
     }
     // Update is called once per frame

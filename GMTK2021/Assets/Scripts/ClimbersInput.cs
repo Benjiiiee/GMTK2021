@@ -41,25 +41,7 @@ public class ClimbersInput : MonoBehaviour
         myRB = GetComponent<Rigidbody2D>();
         textMeshPro.color = Color.red;
 
-        switch (assosiatedKey)
-        {
-            case ClimbersKey.a:
-                climbersKey = KeyCode.A;
-                textMeshPro.text = "A";
-                break;
-            case ClimbersKey.s:
-                climbersKey = KeyCode.S;
-                textMeshPro.text = "S";
-                break;
-            case ClimbersKey.d:
-                climbersKey = KeyCode.D;
-                textMeshPro.text = "D";
-                break;
-            case ClimbersKey.f:
-                climbersKey = KeyCode.F;
-                textMeshPro.text = "F";
-                break;
-        }
+        LetterUpdate();
 
         //phil
         //velocity2D = myRB.velocity.x;
@@ -110,7 +92,7 @@ public class ClimbersInput : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         gameManager.climbersHolding++;
         textMeshPro.color = Color.green;
-        
+        LetterUpdate();
         // }     
     }
     public void LetGo()
@@ -126,5 +108,48 @@ public class ClimbersInput : MonoBehaviour
         gameManager.climbersHolding--;
         textMeshPro.color = Color.red;
         //}
+
+        switch (assosiatedKey)
+        {
+            case ClimbersKey.a:
+                climbersKey = KeyCode.A;
+                textMeshPro.text = "";
+                break;
+            case ClimbersKey.s:
+                climbersKey = KeyCode.S;
+                textMeshPro.text = "";
+                break;
+            case ClimbersKey.d:
+                climbersKey = KeyCode.D;
+                textMeshPro.text = "";
+                break;
+            case ClimbersKey.f:
+                climbersKey = KeyCode.F;
+                textMeshPro.text = "";
+                break;
+        }
+    }
+
+    public void LetterUpdate() 
+    {
+        switch (assosiatedKey)
+        {
+            case ClimbersKey.a:
+                climbersKey = KeyCode.A;
+                textMeshPro.text = "A";
+                break;
+            case ClimbersKey.s:
+                climbersKey = KeyCode.S;
+                textMeshPro.text = "S";
+                break;
+            case ClimbersKey.d:
+                climbersKey = KeyCode.D;
+                textMeshPro.text = "D";
+                break;
+            case ClimbersKey.f:
+                climbersKey = KeyCode.F;
+                textMeshPro.text = "F";
+                break;
+        }
     }
 }

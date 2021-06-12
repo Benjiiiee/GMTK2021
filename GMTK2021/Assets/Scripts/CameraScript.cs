@@ -36,7 +36,7 @@ public class CameraScript : MonoBehaviour
             return targets[0].position;
         }
 
-        Bounds bounds = new Bounds(targets[0].position, Vector3.zero);
+        var bounds = new Bounds(targets[0].position, Vector3.zero);
         for (int i = 0; i < targets.Count; i++)
         {
             bounds.Encapsulate(targets[i].position);

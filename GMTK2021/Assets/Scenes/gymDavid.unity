@@ -127,12 +127,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2097431111}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &166890844 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1688552207827783973, guid: fda498b66056617468908e66b06c3f51,
-    type: 3}
-  m_PrefabInstance: {fileID: 2097431111}
-  m_PrefabAsset: {fileID: 0}
 --- !u!233 &203853099 stripped
 HingeJoint2D:
   m_CorrespondingSourceObject: {fileID: 642614155132909820, guid: fda498b66056617468908e66b06c3f51,
@@ -220,6 +214,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Climber (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fda498b66056617468908e66b06c3f51, type: 3}
@@ -462,21 +461,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1555806724}
-  targets:
-  - {fileID: 1036402157}
-  - {fileID: 2048170170}
-  - {fileID: 166890844}
-  - {fileID: 1844707490}
+  targets: []
   offset: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  smoothTime: 0.5
 --- !u!1 &1036402152 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1688552207827783974, guid: fda498b66056617468908e66b06c3f51,
-    type: 3}
-  m_PrefabInstance: {fileID: 636317548}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1036402157 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1688552207827783973, guid: fda498b66056617468908e66b06c3f51,
     type: 3}
   m_PrefabInstance: {fileID: 636317548}
   m_PrefabAsset: {fileID: 0}
@@ -561,6 +552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Climber (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fda498b66056617468908e66b06c3f51, type: 3}
@@ -676,12 +672,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1164641762}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1844707490 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1688552207827783973, guid: fda498b66056617468908e66b06c3f51,
-    type: 3}
-  m_PrefabInstance: {fileID: 1164641762}
-  m_PrefabAsset: {fileID: 0}
 --- !u!233 &1921413148 stripped
 HingeJoint2D:
   m_CorrespondingSourceObject: {fileID: 642614155132909820, guid: fda498b66056617468908e66b06c3f51,
@@ -691,12 +681,6 @@ HingeJoint2D:
 --- !u!1 &2048170168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1688552207827783974, guid: fda498b66056617468908e66b06c3f51,
-    type: 3}
-  m_PrefabInstance: {fileID: 368486823}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2048170170 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1688552207827783973, guid: fda498b66056617468908e66b06c3f51,
     type: 3}
   m_PrefabInstance: {fileID: 368486823}
   m_PrefabAsset: {fileID: 0}
@@ -781,6 +765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Climber (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476794004747735406, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fda498b66056617468908e66b06c3f51, type: 3}

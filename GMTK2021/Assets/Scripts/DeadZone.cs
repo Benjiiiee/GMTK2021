@@ -5,12 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class DeadZone : MonoBehaviour
 {
-    public AudioSource clip;
+    public AudioSource mySource;
+    public AudioClip[] myClips;
     public GameManager gameManager;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        clip.Play();
+        mySource.PlayOneShot(RandomClip(myClips));
         gameManager.Death();
+    }
+
+    public AudioClip RandomClip(AudioClip[] clipArray)
+    {
+        return clipArray[Random.Range(0, clipArray.Length)];
     }
 }

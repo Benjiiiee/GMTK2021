@@ -7174,6 +7174,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
+      propertyPath: swingLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 1fcc43e6160c85e4fbc18ada24a5f103,
+        type: 3}
+    - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: swingRight
+      value: 
+      objectReference: {fileID: 21300000, guid: deb35267589861d45a28649bb574491f,
+        type: 3}
+    - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1506765038}
@@ -7187,6 +7199,18 @@ PrefabInstance:
       propertyPath: assosiatedKey
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: climbingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 085d3c5920251ba43884bda7a12c7b43,
+        type: 3}
+    - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 085d3c5920251ba43884bda7a12c7b43,
+        type: 3}
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.b
@@ -7195,12 +7219,12 @@ PrefabInstance:
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.7261713
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.4669811
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1688552207827783971, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
@@ -11495,12 +11519,12 @@ PrefabInstance:
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.3254717
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.9927811
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
@@ -11602,6 +11626,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4596395014064545826, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0bcb54d00b63e1a4399764dd1cf1d940, type: 2}
     - target: {fileID: 4996858508717158511, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_text

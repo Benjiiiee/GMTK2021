@@ -7,6 +7,7 @@ public class Trigger : MonoBehaviour
     public float triggerThrust = 20f;
 
     public Vector2 triggerDirection;
+    public AudioSource myClip;
 
     public ParticleSystem triggerParticleSystem;
     public ParticleSystem.MainModule mainParticule;
@@ -44,6 +45,7 @@ public class Trigger : MonoBehaviour
                     cooldownTimer2 = cooldown;
                     cooldownTimer = cooldown;
                     triggerParticleSystem.Play();
+                    myClip.Play();
                 }
             }
         }

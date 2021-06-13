@@ -8,22 +8,17 @@ public class ScaleChange : MonoBehaviour
 
     public bool canScale = false;
     public Vector3 targetNewScale;
-    public float maxScaleDown;
+    public float maxScaleDown = 0.5f;
     //public ClimbersInput coll;
 
     private void Start()
     {
         tr = transform;
         targetNewScale = new Vector3(-0.1f, -0.1f, 0f);
-        maxScaleDown = 0.8f;
     }
 
     private void Update()
     {
-        if (tr.localScale.x > 1)
-        {
-            tr.localScale = Vector3.one;
-        }
         if (canScale)
         {
             tr.localScale += targetNewScale;
@@ -41,6 +36,11 @@ public class ScaleChange : MonoBehaviour
                 tr.localScale += targetNewScale;
             }
         }
+        if(tr.localScale.x > 1)
+        {
+            tr.localScale = Vector3.one;
+            targetNewScale -= targetNewScale;
+        }
         
         
     }
@@ -49,7 +49,6 @@ public class ScaleChange : MonoBehaviour
         if (collision.gameObject.GetComponent<ClimbersInput>() != null)
         {
            canScale = true;
-            targetNewScale = -targetNewScale;
         }
         
     }

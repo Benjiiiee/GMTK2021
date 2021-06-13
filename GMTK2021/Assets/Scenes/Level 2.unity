@@ -11109,6 +11109,16 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 870213513}
+    - target: {fileID: 6889579479761544161, guid: 295996eff0b34844eb4b549a6ff8bb6d,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889579479761544161, guid: 295996eff0b34844eb4b549a6ff8bb6d,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 295996eff0b34844eb4b549a6ff8bb6d, type: 3}
 --- !u!4 &998051053 stripped

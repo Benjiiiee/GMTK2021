@@ -37,7 +37,7 @@ public class ScaleChange : MonoBehaviour
         {
             if (tr.localScale.x < 1)
             {
-                canScale = false; 
+                canScale = false;
                 tr.localScale += targetNewScale;
             }
         }
@@ -49,6 +49,7 @@ public class ScaleChange : MonoBehaviour
         if (collision.gameObject.GetComponent<ClimbersInput>() != null)
         {
            canScale = true;
+            targetNewScale = -targetNewScale;
         }
         
     }

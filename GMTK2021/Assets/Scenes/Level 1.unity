@@ -2319,7 +2319,7 @@ PrefabInstance:
     - target: {fileID: 9192033559342452924, guid: 66423a4000ea3384a968d0bcbb067581,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9192033559342452924, guid: 66423a4000ea3384a968d0bcbb067581,
         type: 3}
@@ -5771,7 +5771,7 @@ PrefabInstance:
     - target: {fileID: 9192033559342452924, guid: 66423a4000ea3384a968d0bcbb067581,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9192033559342452924, guid: 66423a4000ea3384a968d0bcbb067581,
         type: 3}
@@ -5832,6 +5832,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plant_Obstacle (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192033559342452927, guid: 66423a4000ea3384a968d0bcbb067581,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66423a4000ea3384a968d0bcbb067581, type: 3}
@@ -6410,7 +6415,7 @@ PrefabInstance:
     - target: {fileID: 9192033559342452924, guid: 66423a4000ea3384a968d0bcbb067581,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9192033559342452924, guid: 66423a4000ea3384a968d0bcbb067581,
         type: 3}
@@ -6471,6 +6476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plant_Obstacle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192033559342452927, guid: 66423a4000ea3384a968d0bcbb067581,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66423a4000ea3384a968d0bcbb067581, type: 3}

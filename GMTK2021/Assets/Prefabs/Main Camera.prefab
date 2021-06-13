@@ -31,8 +31,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6889579479761544174}
   - {fileID: 2050393525511441619}
+  - {fileID: 6889579479761544174}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46,7 +46,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 0}
+  m_BackGroundColor: {r: 0.0627451, g: 0.07450981, b: 0.09411766, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AssetsPPU: 100
+  m_AssetsPPU: 70
   m_RefResolutionX: 1920
   m_RefResolutionY: 1080
   m_UpscaleRT: 0
@@ -150,11 +150,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5927349040144809023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.96, y: 0.24, z: 10}
+  m_LocalPosition: {x: -2.11, y: -1.93, z: 10}
   m_LocalScale: {x: 1.23447, y: 1.23447, z: 1.23447}
   m_Children: []
   m_Father: {fileID: 1232700808656918732}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &737375550553280212
 SpriteRenderer:
@@ -220,7 +220,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -317,7 +317,7 @@ PrefabInstance:
     - target: {fileID: 7720499095331370840, guid: 56fa243be2ec15643bfc7ee36cbc4f1c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7720499095331370840, guid: 56fa243be2ec15643bfc7ee36cbc4f1c,
         type: 3}

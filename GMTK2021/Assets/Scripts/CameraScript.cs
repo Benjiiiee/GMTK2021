@@ -10,6 +10,7 @@ public class CameraScript : MonoBehaviour
     public Vector3 velocity;
     public float smoothTime = 0.3f;
 
+
     public void Start()
     {
         offset = new Vector3(0, 0, -10);
@@ -27,6 +28,17 @@ public class CameraScript : MonoBehaviour
         Vector3 newPosition = centerPoint + offset;
 
         transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, smoothTime);
+
+
+        //Phil Cam boundary
+        if(this.transform.position.x < 0.25f || this.transform.position.x > 12.20) 
+        {
+            this.transform.position = new Vector3
+            (
+                Mathf.Clamp(transform.position.x, 0.25f, 12.20f), transform.position.y, transform.position.z
+            );
+        }
+       
     }
 
     public Vector3 GetCenterPoint()

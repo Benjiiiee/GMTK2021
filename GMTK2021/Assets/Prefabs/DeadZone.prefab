@@ -45,7 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8c5d29c6701cc34182d5613fc46d245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 3235597306991520419}
+  mySource: {fileID: 0}
+  myClips:
+  - {fileID: 8300000, guid: d72b8b1511de3c3459cfafcfe7d5c3f1, type: 3}
+  - {fileID: 8300000, guid: 630959ee812c07c4bbf96bfbdee35d9a, type: 3}
+  - {fileID: 8300000, guid: 840f4ac8c6818b64ea9eb1aca6739885, type: 3}
+  gameManager: {fileID: 0}
 --- !u!61 &6017735729741241720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -82,7 +87,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 08503dd6ddf875c49967ea8996fc396e, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1

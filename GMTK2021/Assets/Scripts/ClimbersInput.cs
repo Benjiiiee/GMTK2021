@@ -10,6 +10,10 @@ public class ClimbersInput : MonoBehaviour
     public TextMeshPro textMeshPro;
     public Rigidbody2D myRB;
 
+    public AudioSource myAudio;
+    public AudioClip[] grippingClips;
+    public AudioClip[] letGoClips;
+
     // phil sprite
     public Sprite climbingSprite;
     public Sprite swingLeft;
@@ -87,6 +91,7 @@ public class ClimbersInput : MonoBehaviour
     {
         climberVisual.sprite = climbingSprite; //phil
 
+        myAudio.PlayOneShot(RandomClip(grippingClips));
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         gameManager.climbersHolding++;
         textMeshPro.color = Color.green;
@@ -97,6 +102,7 @@ public class ClimbersInput : MonoBehaviour
         if (!gameManager.climbersLocked)
         {
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            myAudio.PlayOneShot(RandomClip(letGoClips));
 
         }
         gameManager.climbersHolding--;
@@ -157,6 +163,11 @@ public class ClimbersInput : MonoBehaviour
         thrust = 0;
         direction = Vector2.zero;
         forcedToMove = false;
+    }
+
+    public AudioClip RandomClip(AudioClip[] clipArray)
+    {
+        return clipArray[Random.Range(0, clipArray.Length)];
     }
     public void LetterUpdate() 
     {

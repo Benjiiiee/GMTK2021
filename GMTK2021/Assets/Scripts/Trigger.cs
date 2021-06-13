@@ -54,10 +54,6 @@ public class Trigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (activateCollider) {
-           /*rbToMove = collision.gameObject.GetComponent<ClimbersInput>();
-             rbToMove.forcedToMove = true;
-             rbToMove.thrust = triggerThrust;
-             rbToMove.direction = triggerDirection;*/
            if(collision.gameObject.GetComponent<ClimbersInput>() != null) { 
                 ClimbersInput rbToMove = collision.gameObject.GetComponent<ClimbersInput>();
                 rbToMove.GetMovement(triggerThrust, triggerDirection, true);

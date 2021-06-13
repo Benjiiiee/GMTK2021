@@ -30,7 +30,11 @@ public class ClimbersInput : MonoBehaviour
         d,
         f, 
         k, 
-        l
+        l,
+        q,
+        z,
+        x,
+        p
     }
     public ClimbersKey assosiatedKey;
 
@@ -128,6 +132,22 @@ public class ClimbersInput : MonoBehaviour
                 climbersKey = KeyCode.L;
                 textMeshPro.text = "";
                 break;
+            case ClimbersKey.q:
+                climbersKey = KeyCode.Q;
+                textMeshPro.text = "";
+                break;
+            case ClimbersKey.z:
+                climbersKey = KeyCode.Z;
+                textMeshPro.text = "";
+                break;
+            case ClimbersKey.x:
+                climbersKey = KeyCode.X;
+                textMeshPro.text = "";
+                break;
+            case ClimbersKey.p:
+                climbersKey = KeyCode.P;
+                textMeshPro.text = "";
+                break;
         }
     }
 
@@ -158,6 +178,22 @@ public class ClimbersInput : MonoBehaviour
             case ClimbersKey.l:
                 climbersKey = KeyCode.L;
                 textMeshPro.text = "L";
+                break;
+            case ClimbersKey.q:
+                climbersKey = KeyCode.Q;
+                textMeshPro.text = "Q";
+                break;
+            case ClimbersKey.z:
+                climbersKey = KeyCode.Z;
+                textMeshPro.text = "Z";
+                break;
+            case ClimbersKey.x:
+                climbersKey = KeyCode.X;
+                textMeshPro.text = "X";
+                break;
+            case ClimbersKey.p:
+                climbersKey = KeyCode.P;
+                textMeshPro.text = "P";
                 break;
         }
     }

@@ -3272,6 +3272,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &296844527 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
+    type: 3}
+  m_PrefabInstance: {fileID: 296844525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3e35c33849b71409b816d37003a8ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!233 &296844528 stripped
 HingeJoint2D:
   m_CorrespondingSourceObject: {fileID: 642614155132909820, guid: fda498b66056617468908e66b06c3f51,
@@ -8890,7 +8902,7 @@ PrefabInstance:
         type: 3}
       propertyPath: climbers.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 296844527}
     - target: {fileID: 4674030876700599363, guid: dd8c7659643cdfe41b0050a015169b8f,
         type: 3}
       propertyPath: climbers.Array.data[2]

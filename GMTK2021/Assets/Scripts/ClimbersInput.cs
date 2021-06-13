@@ -85,23 +85,15 @@ public class ClimbersInput : MonoBehaviour
 
     public void Grip()
     {
-        /*if (canGrip)
-        {*/
-        Debug.Log("IM AM GRIPPING");
-
         climberVisual.sprite = climbingSprite; //phil
 
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         gameManager.climbersHolding++;
         textMeshPro.color = Color.green;
         LetterUpdate();
-        // }     
     }
     public void LetGo()
     {
-        /* if (!canGrip)
-         {*/
-        Debug.Log("IM AM NOT GRIPPING");
         if (!gameManager.climbersLocked)
         {
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
@@ -109,7 +101,6 @@ public class ClimbersInput : MonoBehaviour
         }
         gameManager.climbersHolding--;
         textMeshPro.color = Color.red;
-        //}
 
         switch (assosiatedKey)
         {

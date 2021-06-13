@@ -6,10 +6,9 @@ public class ScaleChange : MonoBehaviour
 {
     Transform tr;
 
-    public bool canScale = false;
-    public Vector3 targetNewScale;
+    bool canScale = false;
+    Vector3 targetNewScale;
     public float maxScaleDown = 0.5f;
-    //public ClimbersInput coll;
 
     private void Start()
     {

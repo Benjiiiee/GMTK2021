@@ -94,7 +94,7 @@ public class ClimbersInput : MonoBehaviour
         myAudio.PlayOneShot(RandomClip(grippingClips));
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         gameManager.climbersHolding++;
-        textMeshPro.color = Color.green;
+        textMeshPro.color = Color.white;
         LetterUpdate();
     }
     public void LetGo()

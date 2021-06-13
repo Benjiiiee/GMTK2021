@@ -5,7 +5,8 @@ using UnityEngine;
 public class ScaleChange : MonoBehaviour
 {
     Transform tr;
-
+    public AudioSource mySource;
+    public AudioClip myClip;
     bool canScale = false;
     Vector3 targetNewScale;
     public float maxScaleDown = 0.7f;
@@ -47,7 +48,8 @@ public class ScaleChange : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<ClimbersInput>() != null)
         {
-           canScale = true;
+            mySource.PlayOneShot(myClip);
+            canScale = true;
         }
         
     }

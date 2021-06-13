@@ -104,53 +104,53 @@ public class ClimbersInput : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             myAudio.PlayOneShot(RandomClip(letGoClips));
 
+            switch (assosiatedKey)
+            {
+                case ClimbersKey.a:
+                    climbersKey = KeyCode.A;
+                    textMeshPro.text = "";
+                    break;
+                case ClimbersKey.s:
+                    climbersKey = KeyCode.S;
+                    textMeshPro.text = "";
+                    break;
+                case ClimbersKey.d:
+                    climbersKey = KeyCode.D;
+                    textMeshPro.text = "";
+                    break;
+                case ClimbersKey.f:
+                    climbersKey = KeyCode.F;
+                    textMeshPro.text = "";
+                    break;
+                case ClimbersKey.k:
+                    climbersKey = KeyCode.K;
+                    textMeshPro.text = "";
+                    break;
+                case ClimbersKey.l:
+                    climbersKey = KeyCode.L;
+                    textMeshPro.text = "";
+                    break;
+                case ClimbersKey.q:
+                    climbersKey = KeyCode.Q;
+                    textMeshPro.text = "";
+                    break;
+                case ClimbersKey.z:
+                    climbersKey = KeyCode.Z;
+                    textMeshPro.text = "";
+                    break;
+                case ClimbersKey.x:
+                    climbersKey = KeyCode.X;
+                    textMeshPro.text = "";
+                    break;
+                case ClimbersKey.p:
+                    climbersKey = KeyCode.P;
+                    textMeshPro.text = "";
+                    break;
+            }
         }
         gameManager.climbersHolding--;
         textMeshPro.color = Color.red;
 
-        switch (assosiatedKey)
-        {
-            case ClimbersKey.a:
-                climbersKey = KeyCode.A;
-                textMeshPro.text = "";
-                break;
-            case ClimbersKey.s:
-                climbersKey = KeyCode.S;
-                textMeshPro.text = "";
-                break;
-            case ClimbersKey.d:
-                climbersKey = KeyCode.D;
-                textMeshPro.text = "";
-                break;
-            case ClimbersKey.f:
-                climbersKey = KeyCode.F;
-                textMeshPro.text = "";
-                break;
-            case ClimbersKey.k:
-                climbersKey = KeyCode.K;
-                textMeshPro.text = "";
-                break;
-            case ClimbersKey.l:
-                climbersKey = KeyCode.L;
-                textMeshPro.text = "";
-                break;
-            case ClimbersKey.q:
-                climbersKey = KeyCode.Q;
-                textMeshPro.text = "";
-                break;
-            case ClimbersKey.z:
-                climbersKey = KeyCode.Z;
-                textMeshPro.text = "";
-                break;
-            case ClimbersKey.x:
-                climbersKey = KeyCode.X;
-                textMeshPro.text = "";
-                break;
-            case ClimbersKey.p:
-                climbersKey = KeyCode.P;
-                textMeshPro.text = "";
-                break;
-        }
     }
     public void GetMovement(float collThrust, Vector2 collDirection, bool collForcedToMove)
     {

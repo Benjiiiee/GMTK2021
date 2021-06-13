@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mySource: {fileID: 5998122148972584990}
-  myClip: {fileID: 8300000, guid: fb776bfb00d63894cacff237ad0e8973, type: 3}
+  myClip: {fileID: 8300000, guid: c794e510123977a4fadf3a1b48acf709, type: 3}
   maxScaleDown: 0.7
 --- !u!82 &5998122148972584990
 AudioSource:
@@ -125,7 +125,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fb776bfb00d63894cacff237ad0e8973, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c794e510123977a4fadf3a1b48acf709, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

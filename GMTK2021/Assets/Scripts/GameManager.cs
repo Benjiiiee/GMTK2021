@@ -80,6 +80,10 @@ public class GameManager : MonoBehaviour
     public void Death()
     {
         blockInputs = true;
+        for (int i = 0; i < climbers.Count; i++)
+        {
+            climbers[i].LetGo();
+        }
         FadeOut();
         Invoke("Reload", 1.5f);
     }
@@ -96,8 +100,8 @@ public class GameManager : MonoBehaviour
         {
             climbers[i].Grip();
         }
-        Invoke("FadeOut", 1f);
-        Invoke("LoadNextLevel", 2.5f);
+        Invoke("FadeOut", 1.5f);
+        Invoke("LoadNextLevel", 3f);
     }
 
     public void LoadNextLevel()

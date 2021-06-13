@@ -8629,12 +8629,12 @@ PrefabInstance:
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.3254717
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.9927811
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
@@ -17860,6 +17860,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
+      propertyPath: swingRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 50b1b71495d26744588c89e7ea2496ed,
+        type: 3}
+    - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 550878366}
@@ -17873,6 +17879,18 @@ PrefabInstance:
       propertyPath: assosiatedKey
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: climbingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: da03ed7d23c3c83478ce2fa59412068b,
+        type: 3}
+    - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: da03ed7d23c3c83478ce2fa59412068b,
+        type: 3}
     - target: {fileID: 1688552207827783971, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: nbLinks
@@ -17964,6 +17982,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
+      propertyPath: swingLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 1fcc43e6160c85e4fbc18ada24a5f103,
+        type: 3}
+    - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: swingRight
+      value: 
+      objectReference: {fileID: 21300000, guid: deb35267589861d45a28649bb574491f,
+        type: 3}
+    - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 550878366}
@@ -17977,6 +18007,18 @@ PrefabInstance:
       propertyPath: assosiatedKey
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1341552146692792058, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: climbingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 085d3c5920251ba43884bda7a12c7b43,
+        type: 3}
+    - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 085d3c5920251ba43884bda7a12c7b43,
+        type: 3}
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.b
@@ -17985,12 +18027,12 @@ PrefabInstance:
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.7261713
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1688552206282514181, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.4669811
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1688552207827783971, guid: fda498b66056617468908e66b06c3f51,
         type: 3}

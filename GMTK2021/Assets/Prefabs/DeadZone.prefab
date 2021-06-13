@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8c5d29c6701cc34182d5613fc46d245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySource: {fileID: 0}
+  mySource: {fileID: 3235597306991520419}
   myClips:
   - {fileID: 8300000, guid: d72b8b1511de3c3459cfafcfe7d5c3f1, type: 3}
   - {fileID: 8300000, guid: 630959ee812c07c4bbf96bfbdee35d9a, type: 3}

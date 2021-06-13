@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class DeadZone : MonoBehaviour
 {
     public AudioSource clip;
+    public GameManager gameManager;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         clip.Play();
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameManager.Death();
     }
 }

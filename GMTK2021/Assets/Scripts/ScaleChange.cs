@@ -8,7 +8,7 @@ public class ScaleChange : MonoBehaviour
 
     bool canScale = false;
     Vector3 targetNewScale;
-    public float maxScaleDown = 0.5f;
+    public float maxScaleDown = 0.7f;
 
     private void Start()
     {

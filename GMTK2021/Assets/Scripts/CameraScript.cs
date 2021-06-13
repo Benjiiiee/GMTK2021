@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CameraScript : MonoBehaviour
@@ -11,7 +12,8 @@ public class CameraScript : MonoBehaviour
     public float smoothTime = 0.3f;
 
     public Transform clampY;
-
+    public TextMeshPro timer;
+    public Timer timerObject;
 
     public void Start()
     {
@@ -20,6 +22,7 @@ public class CameraScript : MonoBehaviour
         {
             targets.Add(gameManager.climbers[i].GetComponent<Transform>());
         }
+        
     }
     // Update is called once per frame
     void LateUpdate()
@@ -33,7 +36,7 @@ public class CameraScript : MonoBehaviour
 
 
         //Phil Cam boundary
-        if(this.transform.position.x < 0.25f || this.transform.position.x > 12.20) 
+        if (this.transform.position.x < 0.25f || this.transform.position.x > 12.20)
         {
             this.transform.position = new Vector3
             (
@@ -51,7 +54,7 @@ public class CameraScript : MonoBehaviour
 
     public Vector3 GetCenterPoint()
     {
-        if(targets.Count == 1)
+        if (targets.Count == 1)
         {
             return targets[0].position;
         }

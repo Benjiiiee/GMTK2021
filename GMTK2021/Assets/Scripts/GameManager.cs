@@ -18,9 +18,11 @@ public class GameManager : MonoBehaviour
     public bool fadeOut = false;
     public float fadeSpeed = 0.1f;
     public bool blockInputs = false;
+    public AudioSource deathJingle;
 
     private void Start()
     {
+        deathJingle = GetComponent<AudioSource>();
         climbersTotal = climbers.Count;
         fade.alpha = 1f;
         FadeIn();
@@ -80,6 +82,7 @@ public class GameManager : MonoBehaviour
     public void Death()
     {
         blockInputs = true;
+        deathJingle.Play();
         for (int i = 0; i < climbers.Count; i++)
         {
             climbers[i].LetGo();

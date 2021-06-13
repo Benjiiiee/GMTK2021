@@ -2103,7 +2103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Try to reach your camp
+  m_text: Reach your camp
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6c5565fb585364b4e8b8c38d3f3590b6, type: 2}
   m_sharedMaterial: {fileID: -1530948669907897849, guid: 6c5565fb585364b4e8b8c38d3f3590b6,
@@ -5859,7 +5859,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -98.817}
 --- !u!1 &553401848
 GameObject:
@@ -14063,6 +14063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
+  timer: 
 --- !u!4 &1396240711
 Transform:
   m_ObjectHideFlags: 0
@@ -14075,7 +14076,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1396820923
 GameObject:

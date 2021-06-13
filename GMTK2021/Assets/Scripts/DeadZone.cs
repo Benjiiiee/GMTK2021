@@ -11,8 +11,11 @@ public class DeadZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        mySource.PlayOneShot(RandomClip(myClips));
-        gameManager.Death();
+        if (!gameManager.blockInputs)
+        {
+            mySource.PlayOneShot(RandomClip(myClips));
+            gameManager.Death();
+        }
     }
 
     public AudioClip RandomClip(AudioClip[] clipArray)

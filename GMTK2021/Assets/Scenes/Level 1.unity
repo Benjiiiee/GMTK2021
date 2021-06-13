@@ -3033,7 +3033,7 @@ PrefabInstance:
     - target: {fileID: 1688552207827783971, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: nbLinks
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1688552207827783971, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
@@ -5677,7 +5677,7 @@ PrefabInstance:
     - target: {fileID: 1688552207827783971, guid: fda498b66056617468908e66b06c3f51,
         type: 3}
       propertyPath: nbLinks
-      value: 7
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1688552207827783971, guid: fda498b66056617468908e66b06c3f51,
         type: 3}

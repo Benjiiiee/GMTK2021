@@ -10294,6 +10294,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant_Obstacle (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 9192033559342452927, guid: 66423a4000ea3384a968d0bcbb067581,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec14a0737827b48a1e4a29a1387796,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66423a4000ea3384a968d0bcbb067581, type: 3}
 --- !u!4 &998514243 stripped
@@ -12351,6 +12357,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320573282715768125, guid: dd8c7659643cdfe41b0050a015169b8f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4674030876700599363, guid: dd8c7659643cdfe41b0050a015169b8f,
         type: 3}
@@ -17319,6 +17330,12 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9192033559342452927, guid: 66423a4000ea3384a968d0bcbb067581,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec14a0737827b48a1e4a29a1387796,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66423a4000ea3384a968d0bcbb067581, type: 3}
 --- !u!4 &1785009200 stripped
@@ -17846,6 +17863,12 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9192033559342452927, guid: 66423a4000ea3384a968d0bcbb067581,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec14a0737827b48a1e4a29a1387796,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66423a4000ea3384a968d0bcbb067581, type: 3}
 --- !u!4 &1823950946 stripped
@@ -19108,6 +19131,11 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1208963326}
+    - target: {fileID: 5927349040144809023, guid: 295996eff0b34844eb4b549a6ff8bb6d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 295996eff0b34844eb4b549a6ff8bb6d, type: 3}
 --- !u!1 &1931527394

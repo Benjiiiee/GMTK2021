@@ -17,9 +17,9 @@ public class ClimbersInput : MonoBehaviour
 
     public SpriteRenderer climberVisual;
 
-    public bool forcedToMove;
-    public float thrust;
-    public Vector2 direction;
+    public bool forcedToMove = false;
+    public float thrust = 0f;
+    public Vector2 direction = Vector2.zero;
     //private bool canGrip = true;
 
     float velocity2D;
@@ -80,11 +80,7 @@ public class ClimbersInput : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (forcedToMove)
-        {
-            myRB.AddForce(direction * thrust, ForceMode2D.Impulse);
-        }
-
+        if(forcedToMove) myRB.AddForce(direction * thrust, ForceMode2D.Impulse);
     }
 
     public void Grip()
@@ -150,7 +146,18 @@ public class ClimbersInput : MonoBehaviour
                 break;
         }
     }
-
+    public void GetMovement(float collThrust, Vector2 collDirection, bool collForcedToMove)
+    {
+        thrust = collThrust;
+        direction = collDirection;
+        forcedToMove = collForcedToMove;
+    }
+    public void ClearMovementValues()
+    {
+        thrust = 0;
+        direction = Vector2.zero;
+        forcedToMove = false;
+    }
     public void LetterUpdate() 
     {
         switch (assosiatedKey)

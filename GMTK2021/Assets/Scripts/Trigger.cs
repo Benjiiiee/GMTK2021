@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    public ClimbersInput rbToMove;
     public float triggerThrust = 20f;
 
     public Vector2 triggerDirection;
@@ -54,23 +53,25 @@ public class Trigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (activateCollider) { 
-            rbToMove = collision.gameObject.GetComponent<ClimbersInput>();
-            rbToMove.forcedToMove = true;
-            rbToMove.thrust = triggerThrust;
-            rbToMove.direction = triggerDirection;
+        if (activateCollider) {
+           /*rbToMove = collision.gameObject.GetComponent<ClimbersInput>();
+             rbToMove.forcedToMove = true;
+             rbToMove.thrust = triggerThrust;
+             rbToMove.direction = triggerDirection;*/
+           if(collision.gameObject.GetComponent<ClimbersInput>() != null) { 
+                ClimbersInput rbToMove = collision.gameObject.GetComponent<ClimbersInput>();
+                rbToMove.GetMovement(triggerThrust, triggerDirection, true);
+
+            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<ClimbersInput>() != null)
+        {
+            ClimbersInput rbToMove = collision.gameObject.GetComponent<ClimbersInput>();
+            rbToMove.ClearMovementValues();
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (rbToMove != null)
-        {
-            rbToMove.forcedToMove = false;
-            rbToMove.thrust = 0f;
-            rbToMove.direction = new Vector2(0, 0);
-            rbToMove = null;
-        }
-        
-    }
 }

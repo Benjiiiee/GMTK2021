@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,10 +20,13 @@ public class GameManager : MonoBehaviour
     public float fadeSpeed = 0.1f;
     public bool blockInputs = false;
     public AudioSource deathJingle;
+    public Timer timerObject;
+    public TextMeshProUGUI timer;
 
     private void Start()
     {
         deathJingle = GetComponent<AudioSource>();
+        timerObject = GameObject.FindWithTag("Timer").GetComponent<Timer>();
         climbersTotal = climbers.Count;
         fade.alpha = 1f;
         FadeIn();
@@ -43,6 +47,14 @@ public class GameManager : MonoBehaviour
             fade.alpha += fadeSpeed * Time.deltaTime;
             if (fade.alpha >= 1)
                 fadeOut = false;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (timerObject != null)
+        {
+            timer.text = timerObject.timer;
         }
     }
 

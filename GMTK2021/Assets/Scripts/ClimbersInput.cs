@@ -60,11 +60,11 @@ public class ClimbersInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(climbersKey) && !gameManager.dead)
+        if (Input.GetKeyDown(climbersKey) && !gameManager.blockInputs)
         {
             Grip();
         }
-        else if (Input.GetKeyUp(climbersKey) && !gameManager.dead)
+        else if (Input.GetKeyUp(climbersKey) && !gameManager.blockInputs)
         {
             LetGo();
 

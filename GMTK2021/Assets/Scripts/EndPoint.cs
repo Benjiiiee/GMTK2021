@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EndPoint : MonoBehaviour
 {
+    public GameManager gameManager;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        gameManager.NextLevel();
     }
 
 

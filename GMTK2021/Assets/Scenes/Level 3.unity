@@ -8590,6 +8590,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 344689727148726327, guid: acd5ca6da8068bb4ca2dc40b4015f1c8,
         type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1945741454}
+    - target: {fileID: 344689727148726327, guid: acd5ca6da8068bb4ca2dc40b4015f1c8,
+        type: 3}
       propertyPath: sceneChangeTo
       value: mainMenu
       objectReference: {fileID: 0}
@@ -15657,6 +15662,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6017735729741241727, guid: 1837a322ba3fb044d91bcb60c72b321c,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1945741454}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1837a322ba3fb044d91bcb60c72b321c, type: 3}
 --- !u!1 &1553211851

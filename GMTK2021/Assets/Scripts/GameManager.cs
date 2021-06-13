@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public bool fadeIn = false;
     public bool fadeOut = false;
     public float fadeSpeed = 0.1f;
-    public bool dead = false;
+    public bool blockInputs = false;
 
     private void Start()
     {
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckClimbersNumber()
     {
-        if (Input.GetKeyDown(KeyCode.R) && !dead)
+        if (Input.GetKeyDown(KeyCode.R) && !blockInputs)
         {
             fade.alpha = 1f;
             Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
@@ -79,14 +79,30 @@ public class GameManager : MonoBehaviour
 
     public void Death()
     {
-        dead = true;
+        blockInputs = true;
         FadeOut();
-        Invoke("Load", 1.5f);
+        Invoke("Reload", 1.5f);
     }
 
-    public void Load()
+    public void Reload()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void NextLevel()
+    {
+        blockInputs = true;
+        for(int i = 0; i < climbers.Count; i++)
+        {
+            climbers[i].Grip();
+        }
+        Invoke("FadeOut", 1f);
+        Invoke("LoadNextLevel", 2.5f);
+    }
+
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }

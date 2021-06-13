@@ -10,6 +10,8 @@ public class CameraScript : MonoBehaviour
     public Vector3 velocity;
     public float smoothTime = 0.3f;
 
+    public Transform clampY;
+
 
     public void Start()
     {
@@ -38,7 +40,13 @@ public class CameraScript : MonoBehaviour
                 Mathf.Clamp(transform.position.x, 0.25f, 12.20f), transform.position.y, transform.position.z
             );
         }
-       
+        if (this.transform.position.y < clampY.position.y)
+        {
+            this.transform.position = new Vector3
+            (
+                transform.position.x, Mathf.Clamp(transform.position.y, clampY.position.y, 1000.0f), transform.position.z
+            );
+        }
     }
 
     public Vector3 GetCenterPoint()

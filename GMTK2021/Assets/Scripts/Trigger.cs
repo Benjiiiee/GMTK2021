@@ -68,7 +68,7 @@ public class Trigger : MonoBehaviour
         {
             rbToMove.forcedToMove = false;
             rbToMove.thrust = 0f;
-            rbToMove.direction = triggerDirection;
+            rbToMove.direction = new Vector2(0, 0);
             rbToMove = null;
         }
         
